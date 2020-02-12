@@ -1,7 +1,14 @@
-let userInput;
-userInput = "samosa";
-if ( userInput === "burrito" ) {
-$("response").html("Brilliant  choice!");
-} else {
-  $("response").html("Don't you want a burrito?");
+let i;
+i = 1;
+while ( i < 2 ) {
+  $("#response").html("<br />" + i + " is odd ");
+  i = i + 1;
+}
+while ( i === 2 ) {
+  $("#response").append("<br />" + i + " is even ");
+  i = i + 1;
+}
+while ( i === 3 ) {
+  $("#response").append("<br />" + i + " is odd ");
+  i = i + 2;
 }
