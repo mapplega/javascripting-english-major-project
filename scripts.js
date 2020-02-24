@@ -1,12 +1,3 @@
-<<<<<<< HEAD
-let userInput;
-userInput = prompt("What do you want to have for dinner?", "Type your answer here.");
-if ( userInput === "burrito") {
-  $("#response").html("Brilliant choice!");
-} else {
-  $("#response").html("Don't you want a burrito?");
-}
-=======
 /*
 let i;
 i = 1;
@@ -71,7 +62,7 @@ tipCalculator = function(total, tipRate){
 };
 tipCalculator(50.00, 0.2);
 */
-let tipCalculator;
+/*let tipCalculator;
 tipCalculator = function(multiVariable, divVariable){
   let multiTotal;
   let divTotal;
@@ -87,4 +78,20 @@ tipAmount = 0.2;
 let total;
 total = 50;
 tipCalculator();
->>>>>>> a4eab00217495ebfc3cf3adc56938eae89999846
+*/
+let tipCalculator;
+tipCalculator = function(multiVariable, divVariable){
+  let multiTotal;
+  let divTotal;
+  if (tipAmount < 1){
+  multiTotal = total * tipAmount;
+  $("#response").html("Your tip is $" + multiTotal);} else {
+  divTotal = total % tipAmount;
+  $("#response").html("Your tip is $" + divTotal);
+}
+};
+let tipAmount;
+tipAmount = prompt ("What percentage do you want your tip to be? Enter your answer here.");
+let total;
+total = prompt ("What is your bill's total? Enter your answer here.");
+tipCalculator();
