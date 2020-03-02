@@ -79,30 +79,24 @@ let total;
 total = 50;
 tipCalculator();
 */
-<<<<<<< HEAD
-let tipCalculator;
-tipCalculator = function(multiVariable, divVariable){
-  let multiTotal;
-  let divTotal;
-  if (tipAmount < 1){
-  multiTotal = total * tipAmount;
-  $("#response").html("Your tip is $" + multiTotal);} else {
-  divTotal = total % tipAmount;
-  $("#response").html("Your tip is $" + divTotal);
-}
-};
-let tipAmount;
-tipAmount = prompt ("What percentage do you want your tip to be? Enter your answer here.");
-let total;
-total = prompt ("What is your bill's total? Enter your answer here.");
-tipCalculator();
-=======
 /*let arrayOfStings, arrayOfNumbers, arrayMixed;
 arrayOfStings = ["a", "b", "c"];
 arrayOfNumbers = [1, 2, 3];
-arrayMixed = ["a", null, true, arrayOfNumbers, [4.5, 5.6]];
-$("#reponse").html(arrayOfStings[2]);
+arrayMixed = ["a", 1, null, true, arrayOfNumbers, [4.5, 5.6]];
+$("#response").html(arrayMixed[4]);
 */
+
+/*let myBurritoObject;
+myBurritoObject = {
+  tortilla: "wheat",
+  guacamole: true,
+  beans: "pinto",
+  habaneroSauceSquirts: 3
+  };
+// and let’s access a property
+$("#response").html(myBurritoObject.habaneroSauceSquirts);
+*/
+
 let myHabaneroSauceSquirts, myBurritoObject;
 // First, define and assign a variable for how
 // spicy the burrito is.
@@ -123,8 +117,7 @@ myBurritoObject = {
     }
   }
 };
-$("#response").html("Your burrito has " +
+$("#response").html("Your " + myBurritoObject.beans +  " burrito has " +
   myBurritoObject.habaneroSauceSquirts +
   " squirts of habanero.");
 myBurritoObject.spiciness();
->>>>>>> 95d0bfcf1f883e0b314174909d1e48898b252d53
