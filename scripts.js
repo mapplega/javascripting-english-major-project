@@ -79,6 +79,7 @@ let total;
 total = 50;
 tipCalculator();
 */
+<<<<<<< HEAD
 let tipCalculator;
 tipCalculator = function(multiVariable, divVariable){
   let multiTotal;
@@ -95,3 +96,35 @@ tipAmount = prompt ("What percentage do you want your tip to be? Enter your answ
 let total;
 total = prompt ("What is your bill's total? Enter your answer here.");
 tipCalculator();
+=======
+/*let arrayOfStings, arrayOfNumbers, arrayMixed;
+arrayOfStings = ["a", "b", "c"];
+arrayOfNumbers = [1, 2, 3];
+arrayMixed = ["a", null, true, arrayOfNumbers, [4.5, 5.6]];
+$("#reponse").html(arrayOfStings[2]);
+*/
+let myHabaneroSauceSquirts, myBurritoObject;
+// First, define and assign a variable for how
+// spicy the burrito is.
+myHabaneroSauceSquirts = 3;
+// Now assign the burrito object.
+myBurritoObject = {
+  tortilla: "wheat",
+  guacamole: true,
+  beans: "pinto",
+  // Make use of the variable above.
+  habaneroSauceSquirts: myHabaneroSauceSquirts,
+  // Use the variable again in a function.
+  spiciness: function(){
+    if (myHabaneroSauceSquirts > 0 ){
+      alert("This is a spicy burrito!");
+    } else {
+      alert("This is a mild burrito.");
+    }
+  }
+};
+$("#response").html("Your burrito has " +
+  myBurritoObject.habaneroSauceSquirts +
+  " squirts of habanero.");
+myBurritoObject.spiciness();
+>>>>>>> 95d0bfcf1f883e0b314174909d1e48898b252d53
