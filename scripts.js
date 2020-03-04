@@ -97,7 +97,7 @@ myBurritoObject = {
 $("#response").html(myBurritoObject.habaneroSauceSquirts);
 */
 
-let myHabaneroSauceSquirts, myBurritoObject;
+/*let myHabaneroSauceSquirts, myBurritoObject;
 // First, define and assign a variable for how
 // spicy the burrito is.
 myHabaneroSauceSquirts = 3;
@@ -121,3 +121,9 @@ $("#response").html("Your " + myBurritoObject.beans +  " burrito has " +
   myBurritoObject.habaneroSauceSquirts +
   " squirts of habanero.");
 myBurritoObject.spiciness();
+*/
+let foods;
+foods = ["apple", "banana", "orange", "pear", "pizza"];
+let lastfood=foods.pop();
+//let lastfood=foods[foods.length -1];
+$("#response").html(lastfood);
