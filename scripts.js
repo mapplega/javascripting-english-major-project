@@ -109,3 +109,6 @@ $("#response").html("Your burrito has " +
   myBurritoObject.habaneroSauceSquirts +
   " squirts of habanero.");
 myBurritoObject.spiciness();
+
+/* Explore length -1 and .pop
+*/
