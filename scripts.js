@@ -82,10 +82,22 @@ tipCalculator();
 /*let arrayOfStings, arrayOfNumbers, arrayMixed;
 arrayOfStings = ["a", "b", "c"];
 arrayOfNumbers = [1, 2, 3];
-arrayMixed = ["a", null, true, arrayOfNumbers, [4.5, 5.6]];
-$("#reponse").html(arrayOfStings[2]);
+arrayMixed = ["a", 1, null, true, arrayOfNumbers, [4.5, 5.6]];
+$("#response").html(arrayMixed[4]);
 */
-let myHabaneroSauceSquirts, myBurritoObject;
+
+/*let myBurritoObject;
+myBurritoObject = {
+  tortilla: "wheat",
+  guacamole: true,
+  beans: "pinto",
+  habaneroSauceSquirts: 3
+  };
+// and let’s access a property
+$("#response").html(myBurritoObject.habaneroSauceSquirts);
+*/
+
+/*let myHabaneroSauceSquirts, myBurritoObject;
 // First, define and assign a variable for how
 // spicy the burrito is.
 myHabaneroSauceSquirts = 3;
@@ -105,10 +117,19 @@ myBurritoObject = {
     }
   }
 };
-$("#response").html("Your burrito has " +
+$("#response").html("Your " + myBurritoObject.beans +  " burrito has " +
   myBurritoObject.habaneroSauceSquirts +
   " squirts of habanero.");
 myBurritoObject.spiciness();
+<<<<<<< HEAD
 
 /* Explore length -1 and .pop
 */
+=======
+*/
+let foods;
+foods = ["apple", "banana", "orange", "pear", "pizza"];
+let lastfood=foods.pop();
+//let lastfood=foods[foods.length -1];
+$("#response").html(lastfood);
+>>>>>>> 4dbdc465caa87ae10b9042edcc664a802a831858
