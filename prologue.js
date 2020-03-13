@@ -1,22 +1,27 @@
-/*$("#prologue").html("<p>The text of the Prologue will go here.</p>");
+$("#prologue").html("<p>The text of the Prologue will go here.</p>");
 $("#glosses").html("<p>The glosses will go here.</p>");
-let line1, line1Text;
-line1 = [{text: "Whan", modern: "When"}, {text: "that"}, {text: "Aprill",
-        modern: "April,"}, {text: "with"}, {text: "his"}, {text: "shoures",
-        modern: "showers"}, {text: "soote", modern: "sweet"}];
-// Create a blank string that opens two tags.
-line1Text = "<blockquote><p>";
-line1.forEach(function(word){
-  let wordString;
-  wordString = word.text;
-  if (word.modern){
-    // Add word.modern as a data attribute to the <a> tag.
-    wordString = "<a href='#' data-modern='" + word.modern + "'>" + wordString + "</a>";
-  }
-  line1Text = line1Text + wordString + " ";
-});
-line1Text = line1Text + "<br />(line 2 would go here)</p></blockquote>";
-$("#prologue").html(line1Text);
+$.getJSON("https://the-javascripting-english-major.org/v1/prologue.json", function(data){ // Note the data variable!
+  let prologueText; // Define the variable you didn’t need before.
+  prologueText = "<blockquote><p>"; // Open the tags.
+  // Now you can iterate over the data variable’s .lines property:
+  data.lines.forEach(function(line){ // We get a variable, line.
+    // Define a blank lineText.
+    let lineText;
+    lineText = "";
+    // Now iterate over each line. This part should be familiar.
+    line.forEach(function(word){
+      let wordString;
+      wordString = word.text;
+      if (word.modern){
+        wordString = "<a href='#' data-modern='" + word.modern + "'>" + wordString + "</a>";
+      }
+      lineText = lineText + wordString + " ";
+    });
+    // Add lineText with a line break to the prologueText.
+    prologueText = prologueText + lineText + "<br/>";
+      });
+  prologueText = prologueText + "</p></blockquote>";
+$("#prologue").html(prologueText);
 $("#prologue a").click(function(){
   let glossText, clickedWord, modernWord;
   clickedWord = $( this ).text();
@@ -25,8 +30,8 @@ $("#prologue a").click(function(){
   glossText = "<h2>You clicked on " + clickedWord + ", which means " + modernWord +"</h2>";
   $("#glosses").html(glossText);
 });
-*/
-$("#prologue").html("<p>The text of the Prologue will go here.</p>");
+});
+/*$("#prologue").html("<p>The text of the Prologue will go here.</p>");
 $("#glosses").html("<p>The glosses will go here.</p>");
 let line1, line1Text; // don’t need the intermediate step of line1TextArray
 line1 = [{text: "Whan", modern: "When"}, {text: "that"}, {text: "Aprill,",
@@ -55,3 +60,4 @@ $("#prologue a").click(function(){
   glossText = "<h2>You clicked on the word: " + clickedWord + "</h2>";
   $("#glosses").html(glossText);
 });
+*/
