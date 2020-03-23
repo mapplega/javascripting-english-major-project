@@ -31,8 +31,8 @@ $("#prologue a").click(function(){
 });
 */
 
-/*
-$("#glosses").html("<p>The glosses will go here.</p>");
+
+/*$("#glosses").html("<p>The glosses will go here.</p>");
 $.getJSON("https://the-javascripting-english-major.org/v1/prologue.json", function(data){ // Note the data variable!
   let prologueText; // Define the variable you didn’t need before.
   prologueText = "<blockquote><p>"; // Open the tags.
@@ -52,7 +52,7 @@ $.getJSON("https://the-javascripting-english-major.org/v1/prologue.json", functi
     });
     // Add lineText with a line break to the prologueText.
     prologueText = prologueText + lineText + "<br/>";
-      });
+    });
   prologueText = prologueText + "</p></blockquote>";
 $("#prologue").html(prologueText);
 $("#prologue a").click(function(){
