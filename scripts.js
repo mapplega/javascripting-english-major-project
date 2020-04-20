@@ -118,7 +118,7 @@ let lastfood;
 lastfood = food.pop();
 $("#response").html(lastfood);
 */
-let food;
+/*let food;
 food = ["apple", "pear", "banana", "orange", "pizza"];
 let lastfood;
 lastfood = food.pop();
@@ -127,3 +127,4 @@ $("p").html(lastfood);
 $(".second-paragraph").html(lastfood);
 $("#third-paragraph").html(lastfood);
 $(".fourth-paragraph").addClass("lead");
+*/

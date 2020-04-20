@@ -1,8 +1,37 @@
-p {
-  color: #657b83;
-  background-color: #fdf6e3;
+body {
+  font-family: 'Ubuntu', sans-serif;
 }
-.second-paragraph {
+
+p {
+  font-family: 'Ubuntu', sans-serif;
+  color: #000000;
+  background-color: #FFFFFF;
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Ubuntu', sans-serif;
+  text-align: center;
+}
+
+.navbar-brand {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.nav-item {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+#title {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#response {
+  font-family: 'Ubuntu', sans-serif;
+  color: #000000;
+  text-align: center;
+}
+/*.second-paragraph {
   color: #b58900;
 }
 #third-paragraph {
@@ -12,3 +41,4 @@ p.lead {
   color: #FFFFFF;
   background-color: #000000;
 }
+/*
