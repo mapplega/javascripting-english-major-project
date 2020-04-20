@@ -3,9 +3,10 @@
 }
 
 body {
-  font-family: 'Sen', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .container {
+  font-family: 'Ubuntu', sans-serif;
   text-align: center;
 }
